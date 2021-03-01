@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="form-group">
+          <label for="name">Bride's/Groom's name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="price">Starting bid</label>
+          <input
+            type="number"
+            class="form-control"
+            name="price"
+            id="price"
+            placeholder="price"
+          />
+        </div>
+        <div class="form-group">
+          <label for="education">Education</label>
+          <select name="education" id="education" class="form-control">
+            <option value="1.5">Undergraduate degree</option>
+            <option value="1.2">College degree</option>
+            <option value="1.05">High school degree</option>
+            <option value="0.9">Middle school degree</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="condition">family net worth</label>
+          <select name="condition" id="condition" class="form-control">
+            <option value="2">More than 100,000$</option>
+            <option value="1.5">Between 50,000$ and 100,000$</option>
+            <option value="1.2">Less than 50,000$</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div>
+            <input
+              type="checkbox"
+              class="skills"
+              name="dombra"
+              id="dombra"
+              value="100"
+            />
+            <label for="dombra">Playing on dombra</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="skills"
+              name="cook"
+              id="cook"
+              value="200"
+            />
+            <label for="cook">Good cook</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="skills"
+              name="character"
+              id="character"
+              value="150"
+            />
+            <label for="character">Easygoing character </label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="skills"
+              name="sing"
+              id="sing"
+              value="100"
+            />
+            <label for="sing">Sings well</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <input type="radio" name="age" id="age1" value="1.5" />
+            <label for="age1">18-23</label>
+          </div>
+          <div>
+            <input type="radio" name="age" id="age2" value="1.2" />
+            <label for="age2">24-27</label>
+          </div>
+          <div>
+            <input type="radio" name="age" id="age3" value="0.95" />
+            <label for="age3">28+</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <input
+              type="checkbox"
+              name="s-parents"
+              id="s-parents"
+              value="0.85"
+            />
+            <label for="s-parents">
+              Gossips about his/her parent's attitude
+            </label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="s-character"
+              id="s-character"
+              value="0.9"
+            />
+            <label for="s-character"> Gossips about his/her character</label>
+          </div>
+          <div>
+            <input type="checkbox" name="s-nem" id="s-nem" value="200" />
+            <label for="s-nem">General gossips around his/her person </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="letter">Love letter</label>
+          <textarea name="letter" id="letter" class="form-control"></textarea>
+        </div>
+        <button type="button" id="count">Count</button>
+      </form>
+      <div class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
